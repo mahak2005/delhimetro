@@ -335,7 +335,6 @@ const AnalysisPage = () => {
     <div className="analysis-page">
       <div className="algorithm-buttons">
         <button onClick={() => handleAlgorithmChange('Algorithm 1')}>Dijkstra (Distance)</button>
-        <button onClick={() => handleAlgorithmChange('Algorithm 2')}>Dijkstra (Time)</button>
         <button onClick={() => handleAlgorithmChange('Algorithm 3')}>BFS</button>
         <button onClick={() => handleAlgorithmChange('Algorithm 4')}>DFS</button>
       </div>
