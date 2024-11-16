@@ -5,6 +5,7 @@ import mainImage from './main.png';
 import Analysis from './AnalysisPage';
 import About from './About';
 import Navbar from './Navbar';
+import Chatbot from "./chatbot";
 import './App.css';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/analysis" element={<Analysis />} />
           <Route path="/about" element={<About />} />
+          <Route path="/chatbot" element={<Chatbot />} />
         </Routes>
       </div>
     </Router>
