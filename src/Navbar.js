@@ -20,6 +20,7 @@ const Navbar = () => {
         <li><a href="/">Home</a></li>
         <li><a href="/analysis">Analysis</a></li>
         <li><a href="/about">About</a></li>
+        <li><a href="/chatbot">Chatbot</a></li>
       </ul>
     </nav>
   );
