@@ -1,0 +1,79 @@
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f4f3f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .navbar .logo span {
+    color: #6c63ff; /* Metro logo color */
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #6c63ff;
+    /* Metro theme hover color */
+  }
+  
+  /* Mobile View */
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #f4f3f7;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      padding: 20px 0;
+      text-align: center;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 15px 0;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  

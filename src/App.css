@@ -1,0 +1,115 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f4f3f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the navbar is always on top */
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar .logo span {
+  color: #6c63ff; /* Metro logo color */
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #6c63ff; /* Metro theme hover color */
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 120px; /* Adjusted to account for the fixed navbar height */
+  background-color: #fdfdfd;
+}
+
+.center-image {
+  max-width: 70%; /* More responsive width control */
+  max-height: 80vh; /* Ensures it fits within the viewport */
+  object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .navbar .logo {
+    margin-bottom: 10px;
+  }
+
+  .center-image {
+    max-width: 90%; /* Adjust image size for smaller screens */
+    max-height: 70vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .main-content {
+    padding-top: 100px; /* Slightly smaller padding for larger screens */
+  }
+
+  .center-image {
+    max-width: 60%; /* Adjust the image size for larger screens */
+  }
+}
+
+/* Additional tweaks for ultra-large screens */
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 20px 60px; /* Extra padding for larger screens */
+  }
+
+  .center-image {
+    max-width: 50%;
+    max-height: 85vh;
+  }
+}
