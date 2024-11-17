@@ -15,7 +15,7 @@ const Chatbot = () => {
 
         try {
             // Call backend chatbot API
-            const response = await fetch("https://flask-chatbot-latest.onrender.com", {
+            const response = await fetch("https://flask-chatbot-latest.onrender.com/chat", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ user_input: userInput }),
