@@ -26,9 +26,9 @@ const About = () => {
         <a href="https://www.linkedin.com/in/mahak-154720287/" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
           <i className="fab fa-linkedin"></i>
         </a>
-        <a href="https://x.com/NoobCoderVibes" target="_blank" rel="noopener noreferrer" className="twitter-icon">
-          <i className="fab fa-twitter"></i>
-        </a>
+        // <a href="https://x.com/NoobCoderVibes" target="_blank" rel="noopener noreferrer" className="twitter-icon">
+        //   <i className="fab fa-twitter"></i>
+        // </a>
         <a href="https://github.com/mahak2005" target="_blank" rel="noopener noreferrer" className="github-icon">
           <i className="fab fa-github"></i>
         </a>
